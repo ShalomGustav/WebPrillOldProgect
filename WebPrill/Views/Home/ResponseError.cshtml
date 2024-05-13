@@ -1,0 +1,12 @@
+﻿@model CoreLibrary.Models.ResponceLocal
+
+<h1>Произошла ошибка</h1>
+
+@foreach (var error in Model.Errors)
+{
+    <h4>Код: @error.Cod</h4>
+
+    <h5>Сообщение: @error.Message</h5>
+
+    <h6>Цель запроса: @error.Target</h6>
+}
